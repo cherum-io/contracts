@@ -1,0 +1,17 @@
+# Compile settings reproduce the deployed, verified bytecode exactly.
+# solc 0.8.35, optimizer on (500 runs), via-IR, EVM prague.
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc = "0.8.35"
+optimizer = true
+optimizer_runs = 500
+via_ir = true
+evm_version = "prague"
+remappings = [
+    "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+    "forge-std/=lib/forge-std/src/",
+]
+
+# Live, verified addresses on each network: see DEPLOYMENTS.md.
