@@ -48,6 +48,17 @@ Sourcify. Owner of every contract is the Cherum 2-of-3 Safe
 | Polygon | [`0xa0eca6a116b192d24df3d423e0839e44c1ee12fa`](https://polygonscan.com/address/0xa0eca6a116b192d24df3d423e0839e44c1ee12fa#code) |
 | BNB Chain | [`0x2b3428784aece90865251d94dedeb3efcfff4c6c`](https://bscscan.com/address/0x2b3428784aece90865251d94dedeb3efcfff4c6c#code) |
 
+## CherumClaim — pull-based claim escrow
+
+| Network | Address |
+|---|---|
+| Ethereum | [`0xc9B3d35dd109fFc36fe234D6F34DA6E68e899FDD`](https://etherscan.io/address/0xc9B3d35dd109fFc36fe234D6F34DA6E68e899FDD#code) |
+| Base | [`0x978106be459e54dB995d443a15742EBb41c75a4e`](https://basescan.org/address/0x978106be459e54dB995d443a15742EBb41c75a4e#code) |
+| Arbitrum | [`0x35A206944784dc9FadFB1a834Ede5A7bc18C9d82`](https://arbiscan.io/address/0x35A206944784dc9FadFB1a834Ede5A7bc18C9d82#code) |
+| Optimism | [`0x833aaffBA7Ed2b1CbC32a49C1C40B5F76DB1B5E1`](https://optimistic.etherscan.io/address/0x833aaffBA7Ed2b1CbC32a49C1C40B5F76DB1B5E1#code) |
+| Polygon | [`0xFdB201f9176571C2f3DCA0B02A68c2bf0692A560`](https://polygonscan.com/address/0xFdB201f9176571C2f3DCA0B02A68c2bf0692A560#code) |
+| BNB Chain | [`0xEDc66D96a671D119DA3347b6960849be39eF10A0`](https://bscscan.com/address/0xEDc66D96a671D119DA3347b6960849be39eF10A0#code) |
+
 ---
 
 An address can hold a different role on a different network — each row above maps

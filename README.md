@@ -18,6 +18,7 @@ the bytecode you interact with.
 | `CherumReceiver` | Destination leg. Receives bridged funds and delivers the exact amount to each recipient; optionally swaps into the recipient's token. |
 | `CherumRouter` | Same-chain path. Splits and swaps entirely on one chain in a single call. |
 | `CherumDisperse` | Same-chain batch distribution. One token to many recipients atomically — the engine behind Send / disperse. |
+| `CherumClaim` | Pull-based claim escrow. A funded campaign lets each recipient claim their own share (EIP-712 signed leaves); unclaimed funds return to the funder after the deadline. Fee hard-capped on-chain. |
 | `CherumOriginSettler` | ERC-7683 origin settler surface for cross-chain intents. |
 | `CherumOrder`, `CherumPermit2Base`, `CherumFeeBase`, `CherumCallGuard`, `CherumAdmin` | Shared base modules: order hashing, Permit2 binding, fee accounting, call allow-listing, and admin/pause control. |
 
