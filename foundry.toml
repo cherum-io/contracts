@@ -1,5 +1,12 @@
-# Compile settings reproduce the deployed, verified bytecode exactly.
-# solc 0.8.35, optimizer on (500 runs), via-IR, EVM prague.
+# Compile settings reproduce the deployed, verified bytecode exactly,
+# metadata hash included. solc 0.8.35, optimizer on (500 runs), via-IR,
+# EVM prague.
+#
+# Three things are part of the metadata hash and must stay as they are:
+#   - the source paths (src/v2/..., src/pay/...), as recorded on Sourcify;
+#   - the three remappings below, and only those three;
+#   - auto_detect_remappings = false, so forge does not add remappings it
+#     finds inside lib/ (OpenZeppelin ships its own submodules).
 [profile.default]
 src = "src"
 out = "out"
@@ -9,9 +16,11 @@ optimizer = true
 optimizer_runs = 500
 via_ir = true
 evm_version = "prague"
+auto_detect_remappings = false
 remappings = [
     "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
     "forge-std/=lib/forge-std/src/",
+    "openzeppelin-contracts/=lib/openzeppelin-contracts/",
 ]
 
 # Live, verified addresses on each network: see DEPLOYMENTS.md.
